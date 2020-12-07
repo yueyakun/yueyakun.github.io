@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Nginx 黑名单设置 | kun&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/image/favicon.ico">
+    <meta name="description" content="亚坤的博客">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preload" href="/assets/css/0.styles.17b2530e.css" as="style"><link rel="preload" href="/assets/js/app.8776c826.js" as="script"><link rel="preload" href="/assets/js/3.719ba4ab.js" as="script"><link rel="preload" href="/assets/js/1.b7bb3f41.js" as="script"><link rel="preload" href="/assets/js/36.e107ca0b.js" as="script"><link rel="prefetch" href="/assets/js/10.4974cfe9.js"><link rel="prefetch" href="/assets/js/11.87e6127d.js"><link rel="prefetch" href="/assets/js/12.c6e9bf77.js"><link rel="prefetch" href="/assets/js/13.4d126d45.js"><link rel="prefetch" href="/assets/js/14.cb65aa72.js"><link rel="prefetch" href="/assets/js/15.e043e610.js"><link rel="prefetch" href="/assets/js/16.be535c39.js"><link rel="prefetch" href="/assets/js/17.bd4b4d5f.js"><link rel="prefetch" href="/assets/js/18.1f9af6a3.js"><link rel="prefetch" href="/assets/js/19.fcd8e795.js"><link rel="prefetch" href="/assets/js/20.f49035e1.js"><link rel="prefetch" href="/assets/js/21.3002e3db.js"><link rel="prefetch" href="/assets/js/22.32e6c900.js"><link rel="prefetch" href="/assets/js/23.a0850b7d.js"><link rel="prefetch" href="/assets/js/24.e9c01d16.js"><link rel="prefetch" href="/assets/js/25.5ab79530.js"><link rel="prefetch" href="/assets/js/26.20784826.js"><link rel="prefetch" href="/assets/js/27.c7c7410d.js"><link rel="prefetch" href="/assets/js/28.a2f3764e.js"><link rel="prefetch" href="/assets/js/29.ab662d0b.js"><link rel="prefetch" href="/assets/js/30.2efcb540.js"><link rel="prefetch" href="/assets/js/31.96b673ce.js"><link rel="prefetch" href="/assets/js/32.22a60c00.js"><link rel="prefetch" href="/assets/js/33.845e068e.js"><link rel="prefetch" href="/assets/js/34.9973bcde.js"><link rel="prefetch" href="/assets/js/35.1c17fec3.js"><link rel="prefetch" href="/assets/js/37.53b7666c.js"><link rel="prefetch" href="/assets/js/38.332f5b40.js"><link rel="prefetch" href="/assets/js/39.6194c217.js"><link rel="prefetch" href="/assets/js/4.6a822018.js"><link rel="prefetch" href="/assets/js/40.6672c339.js"><link rel="prefetch" href="/assets/js/41.7eba06c7.js"><link rel="prefetch" href="/assets/js/42.7bbef742.js"><link rel="prefetch" href="/assets/js/43.0f5671d6.js"><link rel="prefetch" href="/assets/js/44.31e16e0c.js"><link rel="prefetch" href="/assets/js/45.9ceafc4c.js"><link rel="prefetch" href="/assets/js/5.9df47b66.js"><link rel="prefetch" href="/assets/js/6.1cb92fc9.js"><link rel="prefetch" href="/assets/js/7.bf5e8554.js"><link rel="prefetch" href="/assets/js/8.13589d70.js"><link rel="prefetch" href="/assets/js/9.32bdd988.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.17b2530e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-dad8a512><div data-v-dad8a512><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-dad8a512 data-v-dad8a512><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-dad8a512 data-v-dad8a512><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>kun's blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>kun</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-dad8a512><header class="navbar" data-v-dad8a512><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/image/logo.gif" alt="kun's blog" class="logo"> <span class="site-name">kun's blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Blog/" class="nav-link"><i class="iconfont undefined"></i>
+  Blog
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Spring/" class="nav-link"><i class="iconfont undefined"></i>
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java/" class="nav-link"><i class="iconfont undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/DevOps/" class="nav-link"><i class="iconfont undefined"></i>
+  DevOps
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java 并发/" class="nav-link"><i class="iconfont undefined"></i>
+  Java 并发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Cache/" class="nav-link"><i class="iconfont undefined"></i>
+  Cache
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  tag
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-dad8a512></div> <aside class="sidebar" data-v-dad8a512><div class="personal-info-wrapper" data-v-b5d2cda6 data-v-dad8a512><img src="/image/avatar.jpg" alt="author-avatar" class="personal-img" data-v-b5d2cda6> <h3 class="name" data-v-b5d2cda6>
+    kun
+  </h3> <div class="num" data-v-b5d2cda6><div data-v-b5d2cda6><h3 data-v-b5d2cda6>27</h3> <h6 data-v-b5d2cda6>Article</h6></div> <div data-v-b5d2cda6><h3 data-v-b5d2cda6>24</h3> <h6 data-v-b5d2cda6>Tag</h6></div></div> <hr data-v-b5d2cda6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Blog/" class="nav-link"><i class="iconfont undefined"></i>
+  Blog
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Spring/" class="nav-link"><i class="iconfont undefined"></i>
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Linux/" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java/" class="nav-link"><i class="iconfont undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/DevOps/" class="nav-link"><i class="iconfont undefined"></i>
+  DevOps
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java 并发/" class="nav-link"><i class="iconfont undefined"></i>
+  Java 并发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Cache/" class="nav-link"><i class="iconfont undefined"></i>
+  Cache
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  tag
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-dad8a512><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>Nginx 黑名单设置</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>kun</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2020
+        </a></span></div></div> <div data-v-dad8a512><main class="page"><div class="page-title" style="display:none;"><h1>Nginx 黑名单设置</h1> <hr> <div data-v-aa64b9d0><i class="iconfont reco-account" data-v-aa64b9d0><span data-v-aa64b9d0>kun</span></i> <i class="iconfont reco-date" data-v-aa64b9d0><span data-v-aa64b9d0>2020-12-07 19:30:00</span></i> <!----> <i class="iconfont reco-tag tags" data-v-aa64b9d0><span class="tag-item" data-v-aa64b9d0>Nginx</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="起因"><a href="#起因" class="header-anchor">#</a> 起因</h2> <p>我的博客是用 Nginx 部署的，最近在看 Nginx 访问日志的时候总是看到一些奇怪的访问记录。
+比如下面这些访问路径：</p> <p>/phpmyadmin/
+/uge.top
+/mysql/admin/index.php
+/mysql/dbadmin/index.php
+/mysql/sqlmanager/index.php</p> <p>打眼一看就知道这些访问肯定不是善意的，又按 ip 统计了一下访问次数发下有几个 ip 的访问次数很异常：</p> <p><img src="/posts/2020/2020-12-07-nginx-access-log-analysis/01.png" alt=""></p> <p>再查一下访问量前几名几个ip访问的页面，发现全是在访问 /phpmyadmin/ 和 /uge.top 这两个路径，猜测可能是黑产在扫描互联网。
+嘿，合着我这小破站折磨点访问量还都是机器人啊，扎心了啊。。。</p> <p><img src="/posts/2020/2020-12-07-nginx-access-log-analysis/02.png" alt=""></p> <p>哈哈，不管了给 Nginx 设置个黑名单吧！</p> <h2 id="nginx-黑名单设置"><a href="#nginx-黑名单设置" class="header-anchor">#</a> Nginx 黑名单设置</h2> <h3 id="创建-ip-black-黑名单文件"><a href="#创建-ip-black-黑名单文件" class="header-anchor">#</a> 创建 ip.black 黑名单文件</h3> <div class="language- extra-class"><pre class="language-text"><code>#nginx拒绝访问ip
+deny 212.64.58.60;
+deny 93.243.88.232;
+deny 72.87.95.36;
+
+</code></pre></div><h3 id="修改-nginx-conf-配置文件"><a href="#修改-nginx-conf-配置文件" class="header-anchor">#</a> 修改 nginx.conf 配置文件</h3> <p>在 http 配置中加入黑名单配置</p> <div class="language- extra-class"><pre class="language-text"><code>http {   
+    #配置黑名单文件地址
+    include ip.black
+}
+
+</code></pre></div><h3 id="重启-nginx-服务，配置完成。"><a href="#重启-nginx-服务，配置完成。" class="header-anchor">#</a> 重启 Nginx 服务，配置完成。</h3> <h2 id="一些-nginx-访问日志统计命令"><a href="#一些-nginx-访问日志统计命令" class="header-anchor">#</a> 一些 Nginx 访问日志统计命令</h2> <p>再列出一些常用的 access.log 文件的统计分析命令：</p> <h3 id="ip相关统计"><a href="#ip相关统计" class="header-anchor">#</a> IP相关统计</h3> <p>统计IP访问量
+awk '{print $1}' access.log | sort -n | uniq | wc -l</p> <p>查看某一时间段的IP访问量(4-5点)
+grep &quot;07/Apr/2017:0[4-5]&quot; access.log | awk '{print $1}' | sort | uniq -c| sort -nr | wc -l</p> <p>查看访问最频繁的前100个IP
+awk '{print $1}' access.log | sort -n |uniq -c | sort -rn | head -n 100</p> <p>查看访问100次以上的IP
+awk '{print $1}' access.log | sort -n |uniq -c |awk '{if($1 &gt;100) print $0}'|sort -rn</p> <p>查询某个IP的详细访问情况,按访问频率排序
+grep '104.217.108.66' access.log |awk '{print $7}'|sort |uniq -c |sort -rn |head -n 100</p> <h3 id="页面访问统计"><a href="#页面访问统计" class="header-anchor">#</a> 页面访问统计</h3> <p>查看访问最频的页面(TOP100)
+awk '{print $7}' access.log | sort |uniq -c | sort -rn | head -n 100</p> <p>查看访问最频的页面([排除php页面】(TOP100)
+grep -v &quot;.php&quot;  access.log | awk '{print $7}' | sort |uniq -c | sort -rn | head -n 100</p> <p>查看页面访问次数超过100次的页面
+cat access.log | cut -d ' ' -f 7 | sort |uniq -c | awk '{if ($1 &gt; 100) print $0}' | less</p> <p>查看最近1000条记录，访问量最高的页面
+tail -1000 access.log |awk '{print $7}'|sort|uniq -c|sort -nr|less</p> <h3 id="每秒请求量统计"><a href="#每秒请求量统计" class="header-anchor">#</a> 每秒请求量统计</h3> <p>统计每秒的请求数,top100的时间点(精确到秒)
+awk '{print $4}' access.log |cut -c 14-21|sort|uniq -c|sort -nr|head -n 100</p> <h3 id="每分钟请求量统计"><a href="#每分钟请求量统计" class="header-anchor">#</a> 每分钟请求量统计</h3> <p>统计每分钟的请求数,top100的时间点(精确到分钟)
+awk '{print $4}' access.log |cut -c 14-18|sort|uniq -c|sort -nr|head -n 100</p> <h3 id="每小时请求量统计"><a href="#每小时请求量统计" class="header-anchor">#</a> 每小时请求量统计</h3> <p>统计每小时的请求数,top100的时间点(精确到小时)
+awk '{print $4}' access.log |cut -c 14-15|sort|uniq -c|sort -nr|head -n 100</p> <h3 id="性能分析"><a href="#性能分析" class="header-anchor">#</a> 性能分析</h3> <p>在nginx log中最后一个字段加入$request_time</p> <p>列出传输时间超过 3 秒的页面，显示前20条
+cat access.log|awk '($NF &gt; 3){print $7}'|sort -n|uniq -c|sort -nr|head -20</p> <p>列出php页面请求时间超过3秒的页面，并统计其出现的次数，显示前100条
+cat access.log|awk '($NF &gt; 1 &amp;&amp;  $7~/.php/){print $7}'|sort -n|uniq -c|sort -nr|head -100</p> <h3 id="蜘蛛抓取统计"><a href="#蜘蛛抓取统计" class="header-anchor">#</a> 蜘蛛抓取统计</h3> <p>统计蜘蛛抓取次数
+grep 'Baiduspider' access.log |wc -l</p> <p>统计蜘蛛抓取404的次数
+grep 'Baiduspider' access.log |grep '404' | wc -l</p> <h3 id="tcp连接统计"><a href="#tcp连接统计" class="header-anchor">#</a> TCP连接统计</h3> <p>查看当前TCP连接数
+netstat -tan | grep &quot;ESTABLISHED&quot; | grep &quot;:80&quot; | wc -l</p> <p>用tcpdump嗅探80端口的访问看看谁最高
+tcpdump -i eth0 -tnn dst port 80 -c 1000 | awk -F&quot;.&quot; '{print $1&quot;.&quot;$2&quot;.&quot;$3&quot;.&quot;$4}' | sort | uniq -c | sort -nr</p></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-40a3448a><li class="level-2" data-v-40a3448a><a href="/2020/2020-12-07-nginx-access-log-analysis.html#起因" class="sidebar-link" data-v-40a3448a>起因</a></li><li class="level-2" data-v-40a3448a><a href="/2020/2020-12-07-nginx-access-log-analysis.html#nginx-黑名单设置" class="sidebar-link" data-v-40a3448a>Nginx 黑名单设置</a></li><li class="level-3" data-v-40a3448a><a href="/2020/2020-12-07-nginx-access-log-analysis.html#创建-ip-black-黑名单文件" class="sidebar-link" data-v-40a3448a>创建 ip.black 黑名单文件</a></li><li class="level-3" data-v-40a3448a><a href="/2020/2020-12-07-nginx-access-log-analysis.html#修改-nginx-conf-配置文件" class="sidebar-link" data-v-40a3448a>修改 nginx.conf 配置文件</a></li><li class="level-3" data-v-40a3448a><a href="/2020/2020-12-07-nginx-access-log-analysis.html#重启-nginx-服务，配置完成。" class="sidebar-link" data-v-40a3448a>重启 Nginx 服务，配置完成。</a></li><li class="level-2" data-v-40a3448a><a href="/2020/2020-12-07-nginx-access-log-analysis.html#一些-nginx-访问日志统计命令" class="sidebar-link" data-v-40a3448a>一些 Nginx 访问日志统计命令</a></li><li class="level-3" data-v-40a3448a><a href="/2020/2020-12-07-nginx-access-log-analysis.html#ip相关统计" class="sidebar-link" data-v-40a3448a>IP相关统计</a></li><li class="level-3" data-v-40a3448a><a href="/2020/2020-12-07-nginx-access-log-analysis.html#页面访问统计" class="sidebar-link" data-v-40a3448a>页面访问统计</a></li><li class="level-3" data-v-40a3448a><a href="/2020/2020-12-07-nginx-access-log-analysis.html#每秒请求量统计" class="sidebar-link" data-v-40a3448a>每秒请求量统计</a></li><li class="level-3" data-v-40a3448a><a href="/2020/2020-12-07-nginx-access-log-analysis.html#每分钟请求量统计" class="sidebar-link" data-v-40a3448a>每分钟请求量统计</a></li><li class="level-3" data-v-40a3448a><a href="/2020/2020-12-07-nginx-access-log-analysis.html#每小时请求量统计" class="sidebar-link" data-v-40a3448a>每小时请求量统计</a></li><li class="level-3" data-v-40a3448a><a href="/2020/2020-12-07-nginx-access-log-analysis.html#性能分析" class="sidebar-link" data-v-40a3448a>性能分析</a></li><li class="level-3" data-v-40a3448a><a href="/2020/2020-12-07-nginx-access-log-analysis.html#蜘蛛抓取统计" class="sidebar-link" data-v-40a3448a>蜘蛛抓取统计</a></li><li class="level-3" data-v-40a3448a><a href="/2020/2020-12-07-nginx-access-log-analysis.html#tcp连接统计" class="sidebar-link" data-v-40a3448a>TCP连接统计</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div></div></div>
+    <script src="/assets/js/app.8776c826.js" defer></script><script src="/assets/js/3.719ba4ab.js" defer></script><script src="/assets/js/1.b7bb3f41.js" defer></script><script src="/assets/js/36.e107ca0b.js" defer></script>
+  </body>
+</html>
